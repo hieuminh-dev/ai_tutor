@@ -1,0 +1,45 @@
+=== WEB DEVELOPMENT STUDY GUIDE ===
+Web development involves building websites and applications for the internet.
+
+--- HTML (HyperText Markup Language) ---
+HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web pages.
+An HTML element is defined by a start tag, some content, and an end tag:
+<h1>My First Heading</h1>
+<p>My first paragraph.</p>
+
+Standard HTML tags:
+- <html>: The root element of an HTML page.
+- <head>: Contains meta information about the HTML page.
+- <title>: Specifies a title for the HTML page.
+- <body>: Defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+- <h1> to <h6>: Defines HTML headings, with <h1> being the largest/most important heading.
+- <p>: Defines a paragraph.
+- <a>: Defines a hyperlink. The href attribute specifies the URL: <a href="https://example.com">Visit Site</a>
+- <img>: Defines an image. The src attribute specifies the image source path: <img src="img.jpg" alt="Description">
+
+--- CSS (Cascading Style Sheets) ---
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media. It saves a lot of work because it can control the layout of multiple web pages all at once.
+CSS selectors are used to "find" (or select) the HTML elements you want to style.
+We can divide CSS selectors into five categories:
+1. Simple selectors (select elements based on name, id, class)
+2. Combinator selectors (select elements based on a specific relationship between them)
+3. Pseudo-class selectors (select elements based on a certain state, e.g., mouse hover)
+4. Pseudo-elements selectors (select and style a part of an element)
+5. Attribute selectors (select elements based on an attribute or attribute value)
+
+Example of CSS styling rules:
+h1 {
+  color: blue;
+  font-size: 24px;
+}
+p {
+  color: red;
+  line-height: 1.5;
+}
+
+The CSS color property is used to set the color of the text.
+The CSS font-family property defines the font to be used.
+The CSS font-size property defines the text size to be used.
+The CSS border property defines a border around an HTML element.
+The CSS margin property is used to create space around elements, outside of any defined borders.
+The CSS padding property is used to create space around an element's content, inside of any defined borders.

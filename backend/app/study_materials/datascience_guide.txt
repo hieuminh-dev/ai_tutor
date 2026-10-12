@@ -1,0 +1,46 @@
+=== DATA SCIENCE STUDY GUIDE ===
+Data Science involves analyzing data to extract meaningful insights. Python is the leading language for Data Science due to its rich ecosystem of libraries.
+
+--- NUMPY ---
+NumPy stands for Numerical Python. It is a Python library used for working with arrays. It also has functions for working in domain of linear algebra, fourier transform, and matrices.
+In Python, lists serve the purpose of arrays, but they are slow to process. NumPy aims to provide an array object that is up to 50x faster than traditional Python lists.
+The array object in NumPy is called ndarray, it provides a lot of supporting functions that make working with ndarray very easy. Arrays are very frequently used in data science, where speed and resources are very important.
+Create a NumPy array:
+import numpy as np
+arr = np.array([1, 2, 3, 4, 5])
+print(arr)
+
+--- PANDAS ---
+Pandas is a Python library used for working with data sets. It has functions for analyzing, cleaning, exploring, and manipulating data.
+The name "Pandas" has a reference to both "Panel Data", and "Python Data Analysis" and was created by Wes McKinney in 2008.
+
+Pandas allows us to analyze big data and make conclusions based on statistical theories. Pandas can clean messy data sets, and make them readable and relevant. Relevant data is very important in data science.
+
+Pandas has two primary data structures:
+1. Series: a one-dimensional array holding data of any type (similar to a column in a table).
+2. DataFrame: a multi-dimensional table (similar to an Excel spreadsheet or SQL table).
+
+--- DATA FRAME BASIC OPERATIONS ---
+To create a DataFrame:
+import pandas as pd
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+df = pd.DataFrame(data)
+print(df)
+
+To locate a row, Pandas uses the loc attribute:
+print(df.loc[0]) # returns first row
+
+To load a CSV file into a DataFrame, use read_csv():
+df = pd.read_csv('data.csv')
+
+To view the first rows of a DataFrame, use head() method:
+print(df.head(5))
+
+To view the last rows of a DataFrame, use tail() method:
+print(df.tail(5))
+
+To print info about the data set, use info() method:
+print(df.info())
